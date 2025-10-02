@@ -93,10 +93,10 @@ export const plugins: Plugin[] = [
     },
   }),
   payloadCloudPlugin(),
-  // vercelBlobStorage({
-  //   collections: {
-  //     [Media.slug]: true,
-  //   },
-  //   token: process.env.BLOB_READ_WRITE_TOKEN || '',
-  // }),
+  vercelBlobStorage({
+    collections: {
+      [Media.slug]: true,
+    },
+    token: process.env.BLOB_READ_WRITE_TOKEN || '',
+  }),
 ]
